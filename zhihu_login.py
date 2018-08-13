@@ -16,14 +16,15 @@ from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
 
 
-
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 \
                    (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36'
 }
 
+# 关闭InsecureRequestWarning 警告
 urllib3.disable_warnings(InsecureRequestWarning)
 
+# 设置全局变量
 session = None
 token = ""
 
